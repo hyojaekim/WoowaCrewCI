@@ -13,4 +13,9 @@ public class WoowaCrewCiApplication implements WebMvcConfigurer {
 	public static void main(String[] args) {
 		SpringApplication.run(WoowaCrewCiApplication.class, args);
 	}
+
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/hello").setViewName("chelsea");
+	}
 }
