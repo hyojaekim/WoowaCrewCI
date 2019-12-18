@@ -1,8 +1,0 @@
-node {
-  stage('SonarQube analysis') {
-    def scannerHome = tool 'woowacrew';
-    withSonarQubeEnv('woowacrew') {
-      sh "${scannerHome}/bin/sonar-scanner"
-    }
-  }
-}
